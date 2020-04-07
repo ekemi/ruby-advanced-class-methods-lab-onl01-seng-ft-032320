@@ -22,9 +22,9 @@ class Song
 
    def self.new_by_name(string)
 
-  song = self.new
-   song.name = string
-   song
+      song = self.new
+      song.name = string
+      song
 
    end
 
@@ -43,7 +43,7 @@ class Song
    def self.find_or_create_by_name(string)
 
      if self.find_by_name(string) != nil
-       self.find_by_name(string)
+        self.find_by_name(string)
 
     else
          self.create_by_name(string)
@@ -60,11 +60,11 @@ class Song
 
       #person = self.new
       person = self.new
-    fil = file.split("-")
-    person.name = fil[1].split(".")[0].strip
+      fil = file.split("-")
+      person.name = fil[1].split(".")[0].strip
     #binding.pry
-    person.artist_name = fil[0].strip #.split(".")[0]
-    person
+       person.artist_name = fil[0].strip #.split(".")[0]
+       person
       #binding.pry
   #   person = self.new
   #   person.name = value.split(".")[0]
